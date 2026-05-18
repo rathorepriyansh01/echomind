@@ -44,3 +44,4 @@ torch>=2.3.0                      # PyTorch backend for Whisper & sentence-trans
 
 langchain_mistralai 
 langchain_text_splitter
+python-dotenv
