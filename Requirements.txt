@@ -1,0 +1,46 @@
+# ─────────────────────────────────────────────
+#  AI Meeting Assistant — requirements.txt
+# ─────────────────────────────────────────────
+
+# ── Audio / Video acquisition ────────────────
+yt-dlp>=2024.4.9                  # Download audio from YouTube URLs
+pydub>=0.25.1                     # Audio file manipulation / conversion
+
+# ── Speech-to-Text (local Whisper) ───────────
+openai-whisper>=20231117          # Local Whisper transcription
+ffmpeg-python>=0.2.0              # FFmpeg Python bindings (Whisper dependency)
+
+# ── Translation (Hindi → English) ────────────
+deep-translator>=1.11.4           # Lightweight translation wrapper (Google Translate backend)
+langdetect>=1.0.9                 # Detect source language before translating
+
+# ── LLM / LangChain LCEL + Mistral ───────────
+langchain>=0.2.0                  # Core LangChain framework
+langchain-core>=0.2.0             # LCEL primitives (Runnable, prompts, etc.)
+langchain-community>=0.2.0        # Community integrations (Chroma, HF, etc.)
+langchain-mistralai>=0.1.0        # LangChain wrapper for Mistral AI API
+mistralai>=0.4.0                  # Official Mistral AI Python client
+
+# ── RAG — Embeddings & Vector Store ──────────
+chromadb>=0.5.0                   # Local vector database
+sentence-transformers>=2.7.0      # HuggingFace embedding models
+huggingface-hub>=0.23.0           # Model downloading / HF Hub access
+tokenizers>=0.19.0                # Fast tokenizers (HF dependency)
+
+# ── Streamlit UI ──────────────────────────────
+streamlit>=1.35.0                 # Web UI framework
+streamlit-chat>=0.1.1             # Chat message UI components
+watchdog>=4.0.0                   # File-watching for Streamlit hot-reload
+
+# ── PDF & TXT Export ─────────────────────────
+reportlab>=4.2.0                  # Generate PDFs programmatically
+fpdf2>=2.7.9                      # Lightweight alternative PDF generator
+
+# ── Utilities ────────────────────────────────
+python-dotenv>=1.0.1              # Load .env files (API keys, config)
+tqdm>=4.66.0                      # Progress bars
+numpy>=1.26.0                     # Numerical ops (Whisper / embeddings dep)
+torch>=2.3.0                      # PyTorch backend for Whisper & sentence-transformers
+
+langchain_mistralai 
+langchain_text_splitter
