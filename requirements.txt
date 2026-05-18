@@ -43,7 +43,6 @@ numpy>=1.26.0                     # Numerical ops (Whisper / embeddings dep)
 torch>=2.3.0                      # PyTorch backend for Whisper & sentence-transformers
 
 langchain_mistralai 
-langchain_text_splitter
 python-dotenv
 streamlit
 python-dotenv
